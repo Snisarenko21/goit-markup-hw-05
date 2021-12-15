@@ -55,7 +55,7 @@ body {
 img {
   display: block;
   max-width: 100%;
-  /* height: auto; */
+  
 }
 /* Хедер */
 
@@ -104,9 +104,9 @@ img {
 .nav-link:focus {
   color: var(--accent-color);
 }
-.link-box.nav-item:last-child {
+/* .link-box.nav-item:last-child {
   margin-left: 50;
-}
+} */
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -114,7 +114,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   display: inline-flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -127,36 +127,20 @@ img {
 .contacts-link:hover .contact-icon {
   fill: var(--accent-color);
 }
-.current::after {
-  content: "";
-  display: block;
+.nav-list .nav-link.current {
   position: relative;
-  top: 33px;
-  bottom: auto;
+}
+.nav-link.current::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  /* top: 33px; */
+  bottom: -1px;
   height: 4px;
   background-color: var(--accent-color);
   width: 100%;
   border-radius: 4px;
 }
-
-/* .active::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: 33px;
-  bottom: auto;
-  height: 4px;
-  background-color: var(--accent-color);
-  width: 100%;
-  border-radius: 4px;
-} */
-
-
-  /* color: var(--accent-color); */
-
-/* .btn.current {
-  position: relative;
-  */ 
 
 /* Герой */
 .hero {
@@ -282,8 +266,6 @@ font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
 }
-
-
   .section-team {
     background-color: var(--primary-bg-color);
   }
@@ -368,6 +350,7 @@ font-size: 16px;
     fill: var(--icon-color);
   }
   /* Постоянные клиенты */
+
   .clients-title {
     font-weight: bold;
     font-size: 36px;
@@ -654,8 +637,8 @@ font-size: 16px;
   transform: translate(-50%, -50%);
   width: 528px;
   height: 581px;
-  background-color: tomato;
-  margin-top: 200px;
+  background-color: var(--primary-white-color);
+
  }
  /* .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(1.1);
@@ -679,7 +662,7 @@ font-size: 16px;
 .close svg {
   width: 11px;
   height: 11px;
-  fill: var(--title-text-color);
+  /* fill: var(--title-text-color); */
  }
 .close-icon {
   display: inline-flex;
