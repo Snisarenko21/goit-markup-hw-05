@@ -138,6 +138,7 @@ img {
   width: 100%;
   border-radius: 4px;
 }
+
 .active::after {
   content: "";
   display: block;
