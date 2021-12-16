@@ -82,7 +82,6 @@ img {
 .nav-box {
   display: flex;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .nav-list {
     display: flex
@@ -103,6 +102,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -124,6 +124,7 @@ img {
 .contact-icon {
   fill: var(--primary-text-color);
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-link:hover .contact-icon {
   fill: var(--accent-color);
@@ -336,7 +337,7 @@ img {
   height: 44px;
   border-radius: 50%;
   border-color: var(--primary-white-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover {
   background-color: var(--accent-color);
@@ -349,6 +350,7 @@ img {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Постоянные клиенты */
 
@@ -372,12 +374,13 @@ img {
   padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid var(--icon-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
 .client-icon {
   fill: var(--icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-logo:hover {
   border-color: var(--accent-color);
@@ -389,6 +392,7 @@ img {
 
 .client-logo:hover .client-icon {
   fill: var(--accent-color);
+
 }
 
 /* портфолио */
@@ -398,9 +402,9 @@ img {
   justify-content: center;
   margin-bottom: 50px;
 }
-.portfolio-button:last-child {
+/* .portfolio-button:last-child {
   margin-right: 8px;
-}
+} */
 .portfolio-button {
   padding: 6px 22px;
   text-align: center;
@@ -415,15 +419,20 @@ img {
   border: none;
   box-shadow: none;
   border-radius: 4px;
-  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-    0px 2px 2px rgb(0 0 0 / 12%);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.filter-btn:not(:last-child) {
+    margin-right: 8px;
+}
+
+
 .portfolio-button:hover,
 .portfolio-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
  }
 .portfolio-list {
   display: flex;
@@ -575,7 +584,7 @@ footer .container {
   height: 44px;
   border-radius: 50%;
   background-color: var(--bg-icon-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover {
   background-color: var(--accent-color);
@@ -584,6 +593,7 @@ footer .container {
   width: 22px;
   height: 22px;
   fill: var(--primary-bg-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Модальное окно */
